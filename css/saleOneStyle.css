@@ -1,0 +1,175 @@
+.saleOneHeader{
+    background-image: url('../img/saleOne/sale-one-bg.png');
+}
+.saleOneText>h3{
+    font-size: 27px;
+    font-weight: bold;
+}
+.saleOneText>h2,
+.firstCoupon>h2,
+.otherSale{
+    font-size: 24px;
+    font-weight: bold;
+}
+.saleOneText>span,
+.numberSaleOne,
+.stepSaleOne{
+    font-size: 20px;
+}
+.saleOneText{
+    display:block;
+    margin: 0 auto;
+    padding-bottom: 80px;
+
+}
+section{
+    border-bottom: 1px solid #c0c0c4;
+}
+.saleOneText>h3{
+    display: block;
+    margin: 0 auto;
+    width:60%;
+    padding: 70px 20px 40px;
+}
+.saleOneText>span{
+    display:block;
+    margin: 0 auto 40px;
+    padding-left: 65px;
+    width:60%;
+    position: relative;
+}
+.saleOneText>span:before{
+    content: '';
+    position:absolute;
+    width: 20px;
+    height: 3px;
+    background: red;
+    top: 10px;
+    left: 30px;
+}
+.servOneRed{
+    color: red;
+}
+.saleOneText>h2{
+    display: block;
+    text-align: center;
+    padding: 50px 20px 24px;
+}
+.steps{
+    display: block;
+    margin: 0 auto;
+    padding: 90px 20px
+}
+.step{
+    width: 30%;
+    flex-basis: 250px;
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.step:not(:last-child):after{
+    content: url('../img/saleOne/arrowSaleOne.svg');
+    display: inline-block;
+    width: 40px;
+    height: 15px;
+    position: absolute;
+    top: 35px;
+    right: -35px;
+}
+.numberSaleOne{
+     font-weight: bold;
+     color:white;
+     padding: 8px 20px;
+     background: red;
+     border-radius: 50%;
+ }
+.margSaleOne{
+    margin-left: 20px;
+
+}
+.stepSaleOne{
+    font-weight: bold;
+    margin-top: 25px;
+    text-decoration: none;
+    text-align: center;
+}
+.pdf{
+    position: relative;
+    border-bottom: 2px solid #ffd1d0;
+}
+
+.pdf:after{
+    content: url('../img/saleOne/sale-pdf.png');
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: -40px;
+}
+.firstCoupon{
+    padding: 30px 55px;
+    width: calc(100%/12*4);
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background: #f1f6ff;
+}
+.firstCoupon>.servBlock{
+    width:100%;
+}
+.firstCoupon .servBlock:before{
+    content: none;
+}
+.firstCoupon .pdf{
+    margin-top: 10px;
+    display: inline-block;
+}
+.otherSale{
+    text-align: center;
+}
+.SaleOneChange>img{
+    padding: 60px 0 35px;
+}
+.SaleOneChange>span{
+    padding-bottom: 50px;
+}
+@media(max-width: 760px){
+    .saleOneText>h3,
+    .saleOneText>span {
+        width:90%;
+    }
+    .step:not(:last-child):after{
+        display: none;
+    }
+    .steps{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .step{
+        flex-basis: 150px;
+    }
+    .margSaleOne{
+        margin-left: 0;
+    }
+    .saleOneText{
+        padding: 0 20px 80px 20px;
+    }
+    .firstCoupon{
+        width:80%;
+    }
+}
+@media(max-width: 760px){
+    .firstCoupon{
+        padding: 30px 10px
+    }
+}
+@media(max-width: 420px){
+    .firstCoupon{
+        width:90%;
+    }
+}

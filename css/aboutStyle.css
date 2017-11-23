@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    color:  #2d303a;
+}
+/*==============header=========*/
+.aboutHeader{
+    background: #2c3141;
+    background-image: url('../img/about/about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aboutHeaderInfo{
+    display:block;
+    padding-top:45px;
+    padding-bottom:45px;
+}
+.aboutHeaderInfo>p{
+    font-size: 19px;
+    font-weight: bold;
+    color:white;
+    margin: 0 auto;
+    width:50%;
+}
+.aboutTopImg{
+    display:block;
+    height: 500px;
+    background-image: url('../img/about/imageTop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media(max-width:960px){
+    .aboutHeaderInfo>p{
+        width:80%;
+    }
+    .wrapper .aboutSection{
+        width:80%;
+        margin: 60px auto;
+    }
+}
+@media(max-width:670px){
+    .wrapper .aboutItems{
+        padding-left:0;
+    }
+    .wrapper .aboutItem{
+        padding-right: 0;
+    }
+}
+@media(max-width:550px){
+    .wrapper .aboutItem{
+        width:80%;
+    }
+    .aboutTopImg{
+        display: none;
+    }
+    .aboutSection{
+        margin: 60px auto;
+    }
+}
+/*=======section About========*/
+.aboutSection{
+    font-size: 26px;
+    font-weight: bold;
+    color:black;
+    width:50%;
+    margin:120px auto;
+    display:block;
+    text-align: center;
+}
+.aboutItems{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-left: 70px;
+}
+.aboutItem{
+    display:flex;
+    box-sizing: border-box;
+    width: 40%;
+    padding-right: 60px;
+    font-size: 14px;
+    color: #2d303a;
+    margin-bottom:80px;
+}
+.aboutItem>img{
+    margin-right:30px;
+}
+.aboutItemGrey{
+    color: #aaacb6;
+}
+.aboutItem>p>a{
+    color:red;
+    font-size: 11px;
+}
+/*========AboutIMG======*/
+.Items{
+    display:flex;
+    flex-wrap: wrap;
+}
+.aboutImg{
+    width:calc(100%/4);
+    opacity: 1;
+}
+.aboutImg:hover{
+    opacity: 0.7;
+}
+.aboutMoreImg{
+    display:block;
+    width:100%;
+    background: white;
+    font-size: 11px;
+    font-weight: bold;
+    color:red;
+    border:none;
+    text-align: center;
+    padding:25px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.aboutMoreImg:hover{
+    background: #f1f6ff;
+}
+@media(max-width:800px){
+    .aboutImg {
+        width: calc(100%/2);
+    }
+    .wrapper .aboutContent>p {
+        width: 80%;
+    }
+    .sertificate .sertificateImg>img{
+        height: auto;
+    }
+}
+@media(max-width:640px){
+    .wrapper .aboutStatistics {
+        width: 80%;
+    }
+    .wrapper .sertificate{
+        margin-left:20px;
+    }
+    .wrapper .sertificate>h2{
+        margin-left:30px;
+    }
+}
+@media(max-width:480px){
+    .aboutImg {
+        width: calc(100%);
+    }
+    .wrapper .sertificate{
+        display: none;
+    }
+}
+/*==========content============*/
+.content{
+    display:block;
+    border-bottom: 5px solid #f1f6ff;
+}
+.aboutContent{
+    display:block;
+    box-sizing: border-box;
+    padding: 70px 0;
+}
+.aboutContent>p{
+    width:50%;
+    margin:0 auto;
+}
+.grey{
+    color: #4e535f;
+    font-size: 14px;
+}
+.red{
+    color:red;
+}
+.aboutStatistic{
+    display: inline-block;
+    width: 48%;
+    color: #2d303a;
+}
+.big{
+    font-size: 40px;
+}
+.aboutStatistics{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom:80px;
+}
+
+/*========sertificate========*/
+.sertificate{
+    display: flex;
+    align-items: center;
+    margin:0 auto;
+    margin-left:25%;
+    margin-bottom: 70px;
+}
+.sertificateImg{
+    display:inline-block;
+}
+.sertificateImg>img{
+    width:220px;
+    height:320px;
+}
+.sertificateImg>p{
+    font-size: 15px;
+    text-align: center;
+    color: #2d303a;
+}
+.prevSertif{
+    display:inline-block;
+    width:30px;
+    height:25px;
+    background-image: url('../img/about/sert-left.png');
+}
+.nextSertif{
+    display:inline-block;
+    width:30px;
+    height:25px;
+    background-image: url('../img/about/sert-right.png');
+}
+.sertifSlider{
+    display:flex;
+    font-weight: bold;
+    margin-top:30px;
+    justify-content: space-between;
+}
+.sertificate>h2{
+    font-size: 27px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 90px;
+}

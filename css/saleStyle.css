@@ -1,0 +1,128 @@
+*{
+    color: #2d303a;
+}
+.blogName>h1,
+.saleform>h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+.servBlock>h4{
+    font-size: 24px;
+    font-weight: bold;
+}
+.saleform>span{
+    font-size: 20px;
+}
+.headerTopRight>a, .headerTopRight>span,
+.saleform .formS .saleBtn{
+    font-size: 18px;
+    font-weight: bold;
+}
+form>input[type="text"]{
+    font-size: 18px;
+}
+.btnService{
+    font-size: 13px;
+    font-weight: bold;
+}
+.servBlock>span{
+    font-size: 13px;
+}
+
+.serviceHeader{
+    background-image: url('../img/sale/sale-bg.png');
+}
+/*========header=========*/
+.servBlocks{
+    margin: 80px 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.servBlock{
+    position: relative;
+    margin: 15px  ;
+}
+.servBlock:before{
+    content: url('../img/sale/sale-coner.png');
+    width:50px;
+    height:50px;
+    position: absolute;
+    top:0;
+    left:-1px;
+
+}
+.servSale{
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    padding: 55px 0 35px;
+}
+.btnService{
+    margin-bottom: 40px;
+    display: inline-block;
+}
+.servBlock4{
+    background-image: url('../img/sale/item4.png');
+}
+.servBlock5{
+    background-image: url('../img/sale/item5.png');
+}
+.saleform{
+    display: block;
+    text-align: center;
+}
+.saleForm{
+background: #f1f6ff;
+    padding: 0 20px;
+}
+.saleform>h1{
+    padding: 100px 0 40px;
+}
+.saleform>span{
+    padding-bottom: 70px;
+    display: block;
+}
+.formS{
+    display: block;
+    width: 65%;
+    padding-bottom: 130px;
+    margin: 0 auto;
+}
+form>input[type="text"]{
+    background: #f1f6ff;
+    color: black;
+    display: inline-block;
+    width:60%;
+}
+.saleBtn{
+    padding: 10px 30px 15px 40px;
+}
+.saleBtn:hover{
+    background-position: 195px;
+}
+
+@media(max-width:1000px){
+    .servBlocks {
+        padding: 0;
+    }
+
+}
+@media(max-width:800px){
+    .servBlocks {
+        margin: 30px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .servBlock {
+       margin: 3px ;
+        width: 300px;
+    }
+    .saleform>h1 {
+        padding: 40px 0 ;
+    }
+    .formS {
+        padding-bottom: 40px;
+    }
+}

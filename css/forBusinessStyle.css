@@ -1,0 +1,119 @@
+.blogHeader{
+    background-image: url('../img/forBusiness/forBusiness-bg.png');
+}
+.businessText{
+    display: block;
+}
+.businessDescription{
+    display:block;
+    width:50%;
+    margin: 0 auto;
+}
+.businessDescription>span{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin:90px  auto 20px;
+}
+.businessDescription>p{
+    display: inline-block;
+    font-size: 14px;
+    margin: 20px 0 20px 35px;
+    position: relative;
+}
+.businessDescription>p:not(:first-child):before{
+    content:'';
+    width:15px;
+    height:2px;
+    display: inline-block;
+    background: red;
+    margin-right:20px;
+    position: absolute;
+    left: -35px;
+    top: 8px;
+}
+.businessItems{
+    background: #f1f6ff;
+    /*padding-top: 95px;*/
+}
+.aboutSection{
+    padding-top:60px;
+    margin:60px auto 90px;
+}
+.businessP{
+    display: block;
+    margin: 75px auto 0;
+    padding-bottom: 75px;
+    width:50%;
+    font-size: 14px;
+    border-bottom: 2px solid #f1f6ff;
+}
+.businessPartners>.wrapper>h2{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 35px 0;
+}
+.partners{
+    display: block;
+    width:50%;
+    margin: 0 auto;
+    background: #2d303a;
+padding: 40px 0 40px;
+    margin-bottom:70px;
+
+}
+.partners>span{
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    margin: 10px 0;
+}
+.partners>a{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-top:15px;
+    text-align: center;
+    text-decoration: none;
+}
+.op1{opacity: 0.8}
+.op2{opacity: 0.4}
+.op3{opacity: 0.2}
+.partnersList{
+    position: relative;
+}
+.partnersList:after{
+    content:url('../svg/arrow-down.svg');
+    position: absolute;
+    bottom: -30px;
+    right: 49%;
+}
+.requisites{
+    display:block;
+    margin:0 auto;
+    margin-bottom: 80px;
+}
+.requisites>h2{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    border-top: 1px solid  #979fb0;
+    text-align: center;
+    padding: 70px 0 50px;
+}
+.requisites>span{
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+@media(max-width:900px){
+    .businessDescription,
+    .businessP,
+    .partners{
+        width:80%;
+    }
+}

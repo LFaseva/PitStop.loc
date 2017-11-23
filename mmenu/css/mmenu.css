@@ -1,0 +1,119 @@
+/*====mmenu========*/
+@font-face{
+    font-family: 'Circe';
+
+    src: url('../../circe/CRC55.otf');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+* {
+    font-family: 'Circe';
+    transition: all 1s;
+}
+.mmenuHeader{
+    display:block;
+    padding: 40px !important;
+}
+.mmenuHeader>a{
+    display:inline-block;
+    margin: 0 5px;
+}
+.socNetMenu{
+    display:inline-block !important;
+    padding: 0!important;
+    transition: transform 1s;
+}
+.socNetMenu:hover{
+    transform: scale(1.5);
+}
+.mmenuHeader img{
+    display:inline-block;
+    margin: 0 5px;
+    width:15px;
+    height:15px;
+}
+.mmenuPhone{
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #2d303a;
+}
+.mmenuPhone:before{
+    content: url('../../svg/phone.svg');
+    padding-right:30px;
+}
+.hoverImg span{
+    margin-left:45px;
+    font-weight: bold;
+    color: #2d303a;
+    font-size:20px;
+    border-bottom: 5px solid #ffd1d0;
+}
+.hoverImg span:hover{
+    border-bottom: 5px solid red;
+}
+.hoverImg{
+    position:relative;
+    margin:0 auto;
+    height: 25px;
+    width:25px;
+    display: block;
+    float: left;
+}
+.hoverImg img {
+    left: 0;
+    position:absolute;
+    top: 0;
+}
+
+.hoverImg img.imgRed {opacity:0;filter:alpha(opacity=0);}
+.hoverImg:hover img.imgRed{opacity:1;filter:alpha(opacity=100);}
+.hoverImg:hover img.imgBlack, .hoverImg img.imgBlack:hover {opacity:0;filter:alpha(opacity=0);}
+
+/*============global settings========*/
+nav:not(.mm-menu) {display: none;}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+	height:2px;
+}
+.mm-listview>li>a, .mm-listview>li>span{
+    padding: 30px 10px 0 40px;
+}
+.hamburger{
+	padding:20px;
+    z-index: 10;
+}
+.is-active{
+	background: #ffd1d0;
+	border-radius: 0;
+}
+.hamburger--collapse.is-active .hamburger-inner:before,
+.hamburger--collapse.is-active .hamburger-inner{
+	background: red ;
+}
+.mm-listview>li:not(.mm-divider):after{
+    border-bottom: none;
+}
+/*Для фиксированной кнопки*/
+#hamburger {
+	position: fixed;
+	right: 50px;
+	top: 20px;
+    z-index:10;
+}
+
+.wrapper{
+    display:block;
+    max-width:1280px;
+    margin:0 auto;
+    height: inherit;
+}
+.clearfix:after{
+    content:'';
+    clear: both;
+    display:block;
+}
+
